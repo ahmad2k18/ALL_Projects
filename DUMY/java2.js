@@ -22,6 +22,6 @@ section[2].style.color = "purple";
 section[3].style.backgroundColor = "green";
 section[3].style.color = "orange";
 section[4].style.color = "Brown";
-section[4].style.textTransform = "uppercase"
+section[4].style.textTransform = "uppercase"za
 
 
