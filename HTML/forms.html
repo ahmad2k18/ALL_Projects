@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <label for="fullname">Your Full Name</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name Here...">
+    <br>
+    <label for="e-mail">Your E-mail</label><br>
+    <input type="e-mail" id="e-mail" name="e-mail" placeholder="Enter Your E-mail Address Here..">
+    <br>
+    <label for="pwd">Enter Password</label><br>
+    <input type="password" name="pwd" id="pwd" placeholder="Enter Password Here..."><br>
+
+    <label for="msg">Write Message for us</label><br>
+    <textarea id="msg" name="msg" rows="4" cols="30" placeholder="Write your message here.."></textarea><br>
+    <input type="submit" value="Submit">
+
+
+    <!-- Radio Button -->
+    <h3>Payment Method</h3>
+    <input type="radio" id="card" name="payment">
+    <label for="card">Card</label>
+    <br>
+    <input type="radio" id="cash" name="payment">
+    <label for="cash">Cash</label>
+    <br>
+    <input type="radio" id="easypaisa" name="payment">
+    <label for="easypaisa">Easy Paisa</label>
+
+    <!--Check Box-->
+    <h3> Choose Fruits</h3>
+    <label for="apple">Apple</label>
+    <input type="checkbox" name="fruits" id="apple">
+    <br>
+    <label for="orange">Orange</label>
+    <input type="checkbox" name="fruits" id="orange">
+    <br>
+    <label for="grapes">Grapes</label>
+    <input type="checkbox" name="fruits" id="grapes">
+
+    <!--Select Box-->
+    <h3>Choose a Your Car</h3>
+    <label for="car">Choose a Favorite Car</label>
+    <select name="cars" id="car">
+        <option value="" >Choose Car</option>
+        <option>BMW</option>
+        <option>HONDA</option>
+        <option>SUZUKI</option>
+     <input type="submit" value="Pay Now">
+
+     <h3>Opt Group</h3>
+     <select name="fruitsandvegetables" >
+     <option value="" disabled selected>Choose a Vegetable and fruits</option>
+     <optgroup label="Fruits" >
+         <option value=""> Apple </option>
+         <option value=""> Orange</option>
+     </optgroup>
+     <optgroup label="vegetables">
+         <option value="">Potato</option>
+         <option value="">Onion</option>
+     </optgroup>
+     </select>
+     <br>
+
+     <h3>Data List Example</h3>
+     <label for="Phone">Chose a smartphone</label>
+     <input type="text" list="Phone">
+     <datalist name="Phone" id="Phone">
+         <option>Apple</option>
+         <option>Sumsung</option>
+         <option>OPPO</option>
+         <option> Q mobile</option>
+     </datalist>
+  </form>
+
+
+  <h1> Fieldset Example</h1>
+  <form  >
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="fname">Firt Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter Your Name" required>
+      <br>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+      <br>
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" name="pwd" placeholder="Enter Your Password">
+      <br>
+      <input type="submit" value="Submit">
+    </fieldset>
+
+    </form>
+
+
+
+
+
+
+    </select>
+
+    
+    
+</body>
+</html>

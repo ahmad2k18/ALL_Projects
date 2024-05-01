@@ -1,0 +1,277 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global styles */
+body {
+    font-family:  'poppins',Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header h1{
+    font-size: 50px;
+    margin-top: 130px;
+}
+
+header p{
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    }
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    margin-bottom: 2rem;
+    top: 10%;
+    width: 100%;
+
+}
+
+nav ul li {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.feature {
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.team-member {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 100px;
+}
+
+.testimonial {
+    margin-bottom: 2rem;
+}
+
+form input,
+form textarea,
+form button {
+    max-width: 600px;
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    outline: none;
+}
+
+ #about{
+    padding: 80px 8%;
+    line-height: 30px;
+    
+}
+#about img {
+    margin-top: 50px;
+    border-radius: 40px;
+}
+
+#contact {
+    padding: 50px 7%;
+
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+    transition: background 0.3s ease;
+
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #1d3b7c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+/* Responsive styles */
+@media screen and (max-width: 680px) {
+    header {
+        padding: 1rem 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5rem 0;
+    }
+    
+    .btn {
+        display: block;
+        margin: 1rem auto;
+    }
+    
+    section {
+        padding: 2rem 0;
+    }
+    
+    .team-member {
+        margin: 1rem auto;
+    }
+    
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Additional styles */
+/* Add your custom CSS styles here */
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+header {
+    background: url('images/background.jpg') center/cover no-repeat; /* Background image */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: relative; /* Add position relative */
+    background: url('images/background.jpg') center/cover no-repeat; /* Background image */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    position: absolute; /* Add position absolute */
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+header img {
+    position: absolute;
+    top: 10px;
+    right: 40px; /* Adjust left position */
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+header img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 1rem;
+}
+header img {
+    position: absolute;
+    top: 10px;
+    left: 30px; /* Adjust left position */
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+header img {
+    position: absolute;
+    top: 30px; /* Adjust top position */
+    left: 40px; /* Adjust left position */
+    width: 140px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.feature img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto;
+    border-radius: 60px; /* Add border-radius for rounded corners */
+    margin-bottom: 1rem;
+}

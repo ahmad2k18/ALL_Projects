@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Philosopher-Bold
+font link: https://fonts.google.com/specimen/Philosopher
+font author: Jovanny Lemonad
+font author site: http://jovanny.ru/
+
+
+icon designer: Larisa Skosyrska
+icon designer link: /Lara.Skosyrska
+        
+{"bg":"#EEE9FD","icon-gradient-0":"#920DE9","icon-gradient-1":"#1536F1","font":"#221057","slogan":"#36246b"}
+      
