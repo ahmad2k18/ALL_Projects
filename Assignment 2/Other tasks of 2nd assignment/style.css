@@ -1,0 +1,20 @@
+/* Styling for the button */
+.button {
+    padding: 10px 20px;
+    background-color: #ff4800; /* Initial background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling for when button is clicked */
+  .button.clicked {
+    background-color: #a72863; /* New background color when clicked */
+  }
+/* IMAGES ENLARGER */
+#image {
+    width: 200px; /* Initial width */
+    transition: width 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
