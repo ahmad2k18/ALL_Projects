@@ -1,0 +1,120 @@
+#cartoon {
+    position: relative;
+    width: 200px;
+    height: 400px;
+  }
+  
+  #head, #body, #left-arm, #right-arm, #left-leg, #right-leg {
+    position: absolute;
+    background-color: #f4c542;
+  }
+  
+  #head {
+    top: 0;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  #body {
+    top: 100px;
+    left: 90px;
+    width: 20px;
+    height: 150px;
+  }
+  
+  #left-arm, #right-arm {
+    top: 120px;
+    width: 60px;
+    height: 20px;
+    background-color: #f4c542;
+  }
+  
+  #left-arm {
+    left: 70px;
+    transform-origin: right center;
+  }
+  
+  #right-arm {
+    left: 140px;
+    transform-origin: left center;
+  }
+  
+  #left-leg, #right-leg {
+    top: 250px;
+    width: 20px;
+    height: 100px;
+  }
+  
+  #left-leg {
+    left: 90px;
+  }
+  
+  #right-leg {
+    left: 110px;
+  }
+
+  #cartoon {
+    position: relative;
+    width: 200px;
+    height: 400px;
+  }
+  
+  #head, #body, #left-arm, #right-arm, #left-leg, #right-leg {
+    position: absolute;
+    background-color: #f4c542;
+  }
+  
+  #head {
+    top: 0;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  #body {
+    top: 100px;
+    left: 90px;
+    width: 20px;
+    height: 150px;
+  }
+  
+  #left-arm, #right-arm {
+    top: 120px;
+    width: 60px;
+    height: 20px;
+    background-color: #f4c542;
+    animation: wave 1s infinite alternate;
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-20deg); }
+  }
+  
+  #left-arm {
+    left: 70px;
+    transform-origin: right center;
+  }
+  
+  #right-arm {
+    left: 140px;
+    transform-origin: left center;
+  }
+  
+  #left-leg, #right-leg {
+    top: 250px;
+    width: 20px;
+    height: 100px;
+  }
+  
+  #left-leg {
+    left: 90px;
+  }
+  
+  #right-leg {
+    left: 110px;
+  }
+  

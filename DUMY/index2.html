@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Button</title>
+<style>
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  
+  .btn:hover::before {
+    width: 0;
+    height: 0;
+  }
+  
+  .btn span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+</style>
+</head>
+<body>
+
+<a href="#" class="btn"><span>Click Me</span></a>
+
+<button class="btn" onclick="animateButton()">Click Me</button>
+
+<script>
+function animateButton() {
+  var button = document.querySelector('.btn');
+  var span = document.createElement('span');
+  span.classList.add('circle');
+  button.appendChild(span);
+
+  var diameter = Math.max(button.clientWidth, button.clientHeight);
+  var radius = diameter / 2;
+
+  span.style.width = span.style.height = diameter + 'px';
+  span.style.left = event.clientX - button.getBoundingClientRect().left - radius + 'px';
+  span.style.top = event.clientY - button.getBoundingClientRect().top - radius + 'px';
+
+  span.classList.add('ripple');
+  
+  setTimeout(() => {
+    span.remove();
+  }, 1000);
+}
+</script>
+
+<style>
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.4);
+      transform: scale(0);
+      animation: rippleEffect 1s linear;
+    }
+  
+    @keyframes rippleEffect {
+      to {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+  </style>
+
+</body>
+</html>
