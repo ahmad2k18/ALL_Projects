@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root {
+  --text-fade-time: 0.5s;
+  --container-shrink-time: 1s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #f39bb1;
+}
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid #83c0f1;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  transition: background-color var(--container-shrink-time) ease-in-out var(--text-fade-time),
+    box-shadow var(--container-shrink-time) ease-in-out var(--text-fade-time);
+}
+
+.faq.active {
+  background-color: #096575;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color var(--container-shrink-time) ease-in-out, box-shadow var(--container-shrink-time) ease-in-out;
+}
+
+.faq::before,
+.faq::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2acc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+  transition: opacity var(--container-shrink-time) ease-in-out var(--text-fade-time);
+}
+
+.faq::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.faq.active::before,
+.faq.active::after {
+  opacity: 0.2;
+  transition: opacity var(--container-shrink-time) ease-in-out;
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  color: white;
+  display: block;
+  font-size: 0.1px;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  transition: margin var(--container-shrink-time) ease-in-out var(--text-fade-time), padding var(--container-shrink-time) ease-in-out var(--text-fade-time),
+    font-size var(--container-shrink-time) ease-in-out var(--text-fade-time), opacity var(--text-fade-time) ease-in-out;
+}
+
+.faq.active .faq-text {
+  opacity: 1;
+  font-size: inherit;
+  margin: 30px 0 0;
+  transition: margin var(--container-shrink-time) ease-in-out, padding var(--container-shrink-time) ease-in-out,
+    font-size var(--container-shrink-time) ease-in-out, opacity var(--text-fade-time) ease-in-out var(--container-shrink-time);
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.faq-toggle:focus {
+  outline: 0;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  display: block;
+}
+
+.faq-toggle .fa-chevron-down {
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+  color: #e41111;
+}

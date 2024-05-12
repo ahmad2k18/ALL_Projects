@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.expanding-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.expanding-cards-panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: grey;
+  border-radius: 2em;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 0.5em;
+  position: relative;
+}
+
+.expanding-cards-panel .expanding-cards-label {
+  font-size: 2em;
+  position: absolute;
+  bottom: 0em;
+  left: 1em;
+  opacity: 0;
+}
+
+.expanding-cards-panel.active {
+  flex: 5;
+}
+
+.expanding-cards-panel.active .expanding-cards-label {
+  opacity: 1;
+}
+
+/* Responsive design settings */
+/* Mobile first */
+/* XS ~ -80% font size */
+.expanding-cards {
+  padding: 0;
+}
+
+.expanding-cards-panel {
+  transition: flex 1s ease-in-out 0.5s;
+}
+
+.expanding-cards-panel.active {
+  transition: flex 1s ease-in-out 0.5s;
+}
+
+.expanding-cards-panel .expanding-cards-label {
+  transition: opacity 0.5s ease-out;
+}
+.expanding-cards-panel.active .expanding-cards-label {
+  transition: opacity 0.5s ease-in 1.5s;
+}
+
+/* SM ~ 90%  font size */
+@media screen and (min-width: 576px) {
+  .expanding-cards {
+    padding: 0.5em;
+  }
+}
+
+/* MD ~ 100%  font size */
+@media screen and (min-width: 768px) {
+  .expanding-cards {
+    padding: 1em;
+  }
+
+  .expanding-cards-panel {
+    transition: flex 1.5s ease-in-out 0.5s;
+  }
+
+  .expanding-cards-panel.active {
+    transition: flex 1.5s ease-in-out 0.5s;
+  }
+
+  .expanding-cards-panel.active .expanding-cards-label {
+    transition: opacity 0.5s ease-in 2s;
+  }
+}
+
+/* LG - 110%  font size */
+@media screen and (min-width: 992px) {
+  .expanding-cards {
+    padding: 1.5em;
+  }
+}
+
+/* XL - 120%  font size */
+@media screen and (min-width: 1200px) {
+  .expanding-cards {
+    padding: 2em;
+  }
+
+  .expanding-cards-panel {
+    transition: flex 2s ease-in-out 0.5s;
+  }
+
+  .expanding-cards-panel.active {
+    transition: flex 2s ease-in-out 0.5s;
+  }
+
+  .expanding-cards-panel.active .expanding-cards-label {
+    transition: opacity 0.5s ease-in 2.5s;
+  }
+}
