@@ -75,3 +75,58 @@ filename_without_extension = filename.removesuffix('.txt')
 
 # Display the filename without the extension
 print("Filename without extension:", filename_without_extension)
+
+#Number 8
+print(10 - 2)
+print(4 * 2)
+print(16 / 2)
+print(16 // 2)  # Integer division also results in 8
+
+#Favorite Number
+favorite_number = 7
+print("My favorite number is:", favorite_number)
+
+# Add comment
+# Program Name: FavoriteNumber.py
+# Author: [Your Name]
+# Date: [Current Date]
+# Description: This program demonstrates the use of variables to represent and print a favorite number.
+
+favorite_number = 7  # Assigning the favorite number to the variable
+print("My favorite number is:", favorite_number)  # Printing a message revealing the favorite number
+
+# Program Name: Calculator.py
+# Author: [Your Name]
+# Date: [Current Date]
+# Description: This program performs basic arithmetic operations (addition, subtraction, multiplication, division) resulting in the number 8.
+
+print(10 - 2)  # Subtracting to get 8
+print(4 * 2)   # Multiplying to get 8
+print(16 / 2)  # Dividing to get 8
+print(16 // 2) # Integer division also results in 8
+
+
+#Zen of pythons
+import this
+
+# Store the names of your friends in a list
+names = ["Alice", "Bob", "Charlie", "David"]
+
+# Print each person's name by accessing each element in the list
+for name in names:
+    print(name)
+
+# Store the names of your friends in a list
+names = ["Alice", "Bob", "Charlie", "David"]
+
+# Print a personalized message to each person in the list
+for name in names:
+    print(f"Hello {name}, I hope you're having a great day!")
+
+
+# Create a list of favorite modes of transportation
+transportation_modes = ["motorcycle", "car", "bicycle", "bus"]
+
+# Print statements about each item in the list
+for mode in transportation_modes:
+    print(f"I would like to own a {mode}.")

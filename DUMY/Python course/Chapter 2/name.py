@@ -18,8 +18,8 @@ frov_language ='pythons'
 print (frov_language.strip())
 
 #URL: https://
-web_url ='https://www.facebook.com'
-print (web_url.removeprefix('http://'))
+web_url ="https://www.facebook.com"
+print (web_url.removeprefix("http://"))
 
 
 
