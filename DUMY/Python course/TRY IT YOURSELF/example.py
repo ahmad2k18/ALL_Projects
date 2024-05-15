@@ -1,3 +1,23 @@
+#simple message 2-1
+# Assigning a message to a variable
+message = "Hello, world!"
+
+# Printing the message
+print(message)
+
+#simple message 2-2
+# Assigning a message to a variable
+message = "Hello, world!"
+
+# Printing the initial message
+print("Initial message:", message)
+
+# Changing the value of the variable to a new message
+message = "How are you today?"
+
+# Printing the new message
+print("New message:", message)
+
 #Personal Message
 # Define the person's name
 name = "Eric"
