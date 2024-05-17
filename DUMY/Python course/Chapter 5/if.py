@@ -101,4 +101,81 @@ elif alien_color == 'yellow':
     print("Congratulations! You just earned 10 points.")
 else:
     print("Congratulations! You just earned 15 points.")
-        
+
+# Checking for Equality
+
+requested_topping ='mushrooms'
+
+if requested_topping!= 'anchovies':
+    print("Hold the anchovies!")
+    
+# Simple If Statement
+
+age = 17
+
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+    
+# if-else statement
+
+age = 17
+
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+    
+# the if-elif-else chain
+
+age = 12
+
+if age < 4:
+    print("Your admission cost is $0.")
+elif age < 18:
+    print("Your admission cost is $5.")
+
+# Another example
+age = 12
+if age < 4:
+ print("Your admission cost is $0.")
+elif age < 18:
+ print("Your admission cost is $25.")
+else:
+ print("Your admission cost is $40.")    
+ 
+# Using Multiple elif blocks
+
+age = 12
+if age < 4:
+ print("Your admission cost is $0.")
+elif age < 18:
+ print("Your admission cost is $5.")
+elif age < 65:
+    print("Your admission cost is $10.")
+
+#  Example 1
+age = 12
+if age < 4:
+ price = 0
+elif age < 18:
+ price = 25
+elif age < 65:
+ price = 40
+else:
+ price = 20
+print(f"Your admission cost is ${price}.")
+
+# Omitting the else Block
+age = 12
+if age < 4:
+ price = 0
+elif age < 18:
+ price = 25
+elif age < 65:
+ price = 40
+elif age >= 65:
+ price = 20
+print(f"Your admission cost is ${price}.")
+
+  
+    
