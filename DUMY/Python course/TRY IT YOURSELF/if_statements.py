@@ -338,5 +338,116 @@ if numerator % denominator == 0:
 else:
     print("The numerator is not divisible by the denominator.")
 
+# Styling if statements 5-12
+# 1. Check if a number is greater than another
+number = 10
+if number > 5:
+    print("1. True")
+else:
+    print("1. False")
+# Prediction: True
+
+# 2. Check if a string contains another string
+greeting = "hello world"
+if "world" in greeting:
+    print("2. True")
+else:
+    print("2. False")
+# Prediction: True
+
+# 3. Check if a list is empty
+empty_list = []
+if not empty_list:
+    print("3. True")
+else:
+    print("3. False")
+# Prediction: True
+
+# 4. Check if two variables are equal
+first_number = 5
+second_number = 10
+if first_number == second_number:
+    print("4. True")
+else:
+    print("4. False")
+# Prediction: False
+
+# 5. Check if a variable is of a certain type
+pi_value = 3.14
+if isinstance(pi_value, float):
+    print("5. True")
+else:
+    print("5. False")
+# Prediction: True
+
+# 6. Check if a value is in a list
+numbers_list = [1, 2, 3, 4, 5]
+if 3 in numbers_list:
+    print("6. True")
+else:
+    print("6. False")
+# Prediction: True
+
+# 7. Check if a dictionary has a specific key
+person_info = {"name": "Alice", "age": 30}
+if "name" in person_info:
+    print("7. True")
+else:
+    print("7. False")
+# Prediction: True
+
+# 8. Check if a set contains a specific element
+unique_numbers = {1, 2, 3}
+if 4 in unique_numbers:
+    print("8. True")
+else:
+    print("8. False")
+# Prediction: False
+
+# 9. Check if a string is numeric
+numeric_string = "1234"
+if numeric_string.isnumeric():
+    print("9. True")
+else:
+    print("9. False")
+# Prediction: True
+
+# 10. Check if the length of a list is greater than a value
+short_list = [1, 2, 3]
+if len(short_list) > 5:
+    print("10. True")
+else:
+    print("10. False")
+
+# your Ideas 5-13
+# Define a list to store new programming project ideas
+project_ideas = []
+
+# Function to add a new idea to the list
+def add_project_idea(category, description):
+    idea = {"category": category, "description": description}
+    project_ideas.append(idea)
+    print(f"Added new idea to {category} category: {description}")
+
+# Ideas for games to write
+add_project_idea("Games", "Create a 2D platformer game with Python and Pygame.")
+add_project_idea("Games", "Develop a text-based adventure game using classes and objects.")
+add_project_idea("Games", "Write a simple chess game with AI opponent.")
+
+# Ideas for datasets to explore
+add_project_idea("Datasets", "Analyze COVID-19 data to track and visualize trends over time.")
+add_project_idea("Datasets", "Explore weather data to build a prediction model.")
+add_project_idea("Datasets", "Investigate stock market data to identify patterns and trends.")
+
+# Ideas for web applications to create
+add_project_idea("Web Applications", "Build a personal blog website using Flask or Django.")
+add_project_idea("Web Applications", "Create a task management app with user authentication.")
+add_project_idea("Web Applications", "Develop an e-commerce site with product listings and a shopping cart.")
+
+# Display all recorded project ideas
+print("\nRecorded Project Ideas:")
+for idea in project_ideas:
+    print(f"Category: {idea['category']}, Description: {idea['description']}")
+
 
 
