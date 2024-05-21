@@ -71,3 +71,18 @@ def build_person(first_name, last_name):
    return person
 musician = build_person('Oggy', 'hendrix')
 print(musician)
+
+# positional arguments
+
+def add(num1,num2):
+    return num1 + num2
+
+print(add(10,20))
+
+# keyword arguments
+
+def add(num1,num2):
+    return num1 + num2
+
+print(add(num1=10,num2=20))
+
