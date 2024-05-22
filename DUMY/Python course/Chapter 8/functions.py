@@ -86,3 +86,33 @@ def add(num1,num2):
 
 print(add(num1=10,num2=20))
 
+# passing a list in the function
+
+def greet_users(names):
+    for name in names:
+        msg = f"Hello, {name.title()}!"
+        print(msg)
+        
+usernames = ['Alice', 'Bob', 'Tyson', 'Ivan', 'Shawn']   
+
+greet_users(usernames)
+
+# multiple number of arguments
+def make_pizzas(*toppings):
+    print(toppings)
+    
+make_pizzas('chilli')
+make_pizzas('green_chilli','bbq','extra_cheese')
+
+# Importing an Entire Module it use in making two py files that are in the same folder
+
+def make_pizza(size, *toppings):
+ """Summarize the pizza we are about to make."""
+ print(f"\nMaking a {size}-inch pizza with the following toppings:")
+ for topping in toppings:
+  print(f"- {topping}")
+
+import pizza
+pizza.make_pizza(16, 'pepperoni')
+pizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+                
