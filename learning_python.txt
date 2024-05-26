@@ -1,0 +1,4 @@
+In Python you can work with variables.
+In Python you can create functions.
+In Python you can use loops.
+In Python you can handle files.
